@@ -168,7 +168,10 @@ body {
   margin: 0 auto;
   justify-content: center;
 }
+.card button{
+ background-color: green;
 
+}
 .card {
   background-color: #1f1f1f8e;
   border: 4px rgb(51, 255, 0) solid;
@@ -344,4 +347,10 @@ border: 4px black solid;
   .card {
     flex: 1 1 300px;
   }
+}
+.footer{
+
+  padding-bottom: 7%;
+  margin-left: 6%;
+
 }
