@@ -23,16 +23,16 @@ const NavBar = () => {
       )}
 
       <div className="social-links">
-        <a href="https://github.com/username" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/tinxq" target="_blank" rel="noopener noreferrer">
           <FaGithub />
         </a>
-        <a href="https://www.instagram.com/username" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/tinxq" target="_blank" rel="noopener noreferrer">
           <FaInstagram />
         </a>
-        <a href="https://www.netlify.com/" target="_blank" rel="noopener noreferrer">
+        <a href="https://app.netlify.com/teams/tinxq/projects" target="_blank" rel="noopener noreferrer">
           <SiNetlify />
         </a>
-        <a href="mailto:youremail@example.com">
+        <a href="tafakurtarig@gmail.com" target="_blank" rel="noopener noreferrer">
           <FaEnvelope />
         </a>
       </div>
