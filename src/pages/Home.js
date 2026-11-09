@@ -8,13 +8,7 @@ export default function Home() {
           Information Technology Graduate
           <span> &amp; Frontend Developer</span>
         </h1>
-<a
-  href="/assets/Tafakur.pdf"
-  download="Tafakur-Tarig.pdf"
-  className="button secondary-button"
->
-  Download My CV
-</a>
+
         <p className="description">
           I create interactive web projects using HTML, CSS, JavaScript, and React.
           I’m currently looking for opportunities to grow my skills and gain
@@ -35,6 +29,14 @@ export default function Home() {
       <div className="hero-image">
         <img src="/assets/ENFP.JPG" alt="Tafakur" className="avatar" />
       </div>
+
+      <a
+  href="/assets/Tafakur.pdf"
+  download="Tafakur-Tarig.pdf"
+  className="button secondary-button"
+>
+  Download My CV s
+</a>
     </section>
   );
 }
