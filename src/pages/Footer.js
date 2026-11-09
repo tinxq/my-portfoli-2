@@ -1,9 +1,12 @@
 function Footer() {
-    return (
-        <footer className="footer">
-            <p>&copy; 2025 Tafakur Tariq. All rights reserved.</p>
-        </footer>
-    );
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <footer className="footer">
+      <p>&copy; {currentYear} Tafakur Tarig. All rights reserved.</p>
+      <a href="#home">Back to top ↑</a>
+    </footer>
+  );
 }
 
 export default Footer;

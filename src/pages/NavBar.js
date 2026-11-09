@@ -1,38 +1,62 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { FaGithub, FaInstagram, FaEnvelope } from "react-icons/fa";
-import { SiNetlify } from "react-icons/si";
 
 const NavBar = () => {
   const [open, setOpen] = useState(false);
 
-  const toggleMenu = () => setOpen(!open);
+  const navLinks = [
+    { label: "Home", href: "#home" },
+    { label: "Projects", href: "#projects" },
+    { label: "About", href: "#about" },
+    { label: "Contact", href: "#contact" },
+  ];
+
+  const closeMenu = () => setOpen(false);
 
   return (
     <nav className="navbar">
-      <button className="menu-btn" onClick={toggleMenu}>
-        ☰ Menu
+      <button
+        type="button"
+        className="menu-btn"
+        aria-expanded={open}
+        aria-controls="site-menu"
+        onClick={() => setOpen((current) => !current)}
+      >
+        {open ? "✕ Close" : "☰ Menu"}
       </button>
 
       {open && (
-        <ul className="dropdown">
-          <li>• <a href="#home">Home</a></li>
-          <li>• <a href="#projects">Projects</a></li>
-          <li>• <a href="#about">About</a></li>
-          <li>• <a href="#contact">Contact</a></li>
+        <ul className="dropdown" id="site-menu">
+          {navLinks.map((link) => (
+            <li key={link.href}>
+              <a href={link.href} onClick={closeMenu}>
+                {link.label}
+              </a>
+            </li>
+          ))}
         </ul>
       )}
 
       <div className="social-links">
-        <a href="https://github.com/tinxq" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://github.com/tinxq"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        >
           <FaGithub />
         </a>
-        <a href="https://www.instagram.com/tinxq" target="_blank" rel="noopener noreferrer">
+
+        <a
+          href="https://www.instagram.com/tinxq"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+        >
           <FaInstagram />
         </a>
-        <a href="https://app.netlify.com/teams/tinxq/projects" target="_blank" rel="noopener noreferrer">
-          <SiNetlify />
-        </a>
-        <a href="tafakurtarig@gmail.com" target="_blank" rel="noopener noreferrer">
+
+        <a href="mailto:tafakurtarig@gmail.com" aria-label="Email">
           <FaEnvelope />
         </a>
       </div>
