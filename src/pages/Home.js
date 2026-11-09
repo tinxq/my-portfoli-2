@@ -35,7 +35,7 @@ export default function Home() {
   download="Tafakur-Tarig.pdf"
   className="button secondary-button"
 >
-  Download My CV s
+  Download My CV
 </a>
     </section>
   );
