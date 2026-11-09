@@ -60,6 +60,9 @@ function Contact() {
           tafakurtarig@gmail.com
         </a>
       </p>
+      <p>
+  Phone: <a href="tel:+966504756260">+966 50 475 6260</a>
+</p>
     </section>
   );
 }
